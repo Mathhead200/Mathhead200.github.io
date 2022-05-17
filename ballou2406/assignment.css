@@ -1,0 +1,99 @@
+@import url("fonts/Montserrat/Montserrat.css");
+@import url("fonts/Indie Flower/Indie Flower.css");
+@import url("fonts/Source Code Pro/Source Code Pro.css");
+
+@page {
+	size: 8.25in 11in;
+	margin: 1in;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	border-width: 0;
+	background-color: white;
+	color: black; 
+	font: 12pt Montserrat, sans-serif;
+	line-height: 1.5;
+	counter-reset: question-counter;
+}
+
+#paper {
+	box-sizing: border-box;
+	width: 8.25in;
+	height: auto;
+	margin: auto;
+	padding: 0;
+}
+
+aside {
+	display: grid;
+	grid-template-rows: 2fr 1fr 2fr 1fr;
+	grid-template-columns: 3fr 1fr;
+	column-gap: 2em;
+}
+
+aside > section {
+	text-align: left;
+	font-size: 9pt;
+}
+
+.blank {
+	border-bottom: 1px solid black;
+	font: 1.5rem "Indie Flower", cursive;
+	white-space: nowrap;
+}
+
+header {
+	text-align: center;
+	margin: 1.5em 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+
+.directions {
+	margin: 4em 4em;
+	border: 1px solid black;
+	padding: 1em;
+}
+
+/*
+.directions::before {
+	content: "Directions:";
+	font-weight: bold;
+	display: block;
+	margin-bottom: 0.5em;
+	text-align: left;
+}
+*/
+
+.question {
+	margin: 2em 0;
+	page-break-inside: avoid;
+	counter-increment: question-counter;
+}
+
+.question::before {
+	float: left;
+	margin-right: 1em;
+	content: counter(question-counter, decimal) ".";
+}
+
+.free-response {
+	height: 4em; /* 4.5em */
+	padding: 0.5em;
+	font: 1.75rem "Indie Flower", cursive;
+}
+
+code, pre {
+	font-family: "Source Code Pro", monospace;
+}
+
+pre {
+	border: 1px dashed darkgrey;
+	padding: 1em;
+	tab-size: 4;
+	margin: 1em;
+}

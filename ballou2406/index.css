@@ -1,0 +1,34 @@
+@import url("fonts/Montserrat/Montserrat.css");
+@import url("fonts/Indie Flower/Indie Flower.css");
+@import url("fonts/Source Code Pro/Source Code Pro.css");
+
+body {
+	font: 12pt Montserrat, sans-serif;
+	text-align: center;
+}
+
+a {
+	color:deepskyblue;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color: darkgoldenrod;
+	text-decoration: underline;
+}
+
+nav {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+}
+
+section > * {
+	margin: 0.5em auto;
+}
