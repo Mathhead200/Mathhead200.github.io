@@ -18,17 +18,26 @@ a:hover {
 	text-decoration: underline;
 }
 
+header {
+	margin-bottom: 2em;
+}
+
 nav {
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 }
 
-section {
+nav section {
 	display: flex;
 	flex-direction: column;
 }
 
-section > * {
+nav section > * {
 	margin: 0.5em auto;
+}
+
+footer {
+	margin-top: 5em;
+	font-weight: bold;
 }
