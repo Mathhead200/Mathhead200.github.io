@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Binary to RegEx </title>
+	<script src="bin2regex.js" defer></script>
+	<link rel="stylesheet" href="bin2regex.css">
+</head>
+<body>
+	<form id="bin2regex_convert" action="" method="get">
+		Binary: <input name="binary" type="text" size="20"> <br><br>
+		Include Hex: <input name="hexadecimal" type="checkbox"> <br><br>
+		<input type="submit" value="Convert"> <br><br>
+		RegEx: <textarea name="regex" disabled rows="3" cols="40"></textarea> <br><br>
+	</form>
+	<form id="bin2regex_validate" action="" method="get">
+		Test: <input name="input" type="text" size="20">
+		<input type="submit" value="Test"> <br>
+		<output name="output" type="text" disabled size="5"></output>
+	</form>
+</body>
+</html>
