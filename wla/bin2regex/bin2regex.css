@@ -1,0 +1,15 @@
+
+form {
+	width: 20%;
+	min-width: 300px;
+	margin: 1em auto;
+}
+
+input, textarea {
+	font-family: monospace;
+	vertical-align: top;
+}
+
+output {
+	text-align: center;
+}
