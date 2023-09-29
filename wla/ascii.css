@@ -1,0 +1,38 @@
+body {
+	text-align: center;
+	padding: 2em;
+}
+
+#animals {
+	width: 90%;
+	margin: 0% auto;
+}
+
+#animals path:not(.NA) {
+	transition: fill 0.25s;
+	cursor: pointer;
+}
+
+#animals .selected {
+	fill: chartreuse;
+}
+
+#animals path:hover:not(.selected):not(.NA) {
+	fill: cornflowerblue;
+}
+
+#ascii > * {
+	display: inline-block;
+	background-color: chartreuse;
+	padding: 0.5em;
+	margin: 1em;
+	font: 1rem monospace;
+}
+
+#clue > * {
+	display: block;
+	font: 2rem sans-serif;
+	background-color: plum;
+	padding: 1em;
+	margin: 1em;
+}
