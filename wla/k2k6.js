@@ -1,4 +1,4 @@
-window.ANIMALS = new Set(["tiger", "frog", "turtle", "buck", "giraffe"]);
+window.ANIMALS = new Set(["duck", "beaver", "squirrel", "racoon", "dog"]);
 window.PROMPT = {
 	q: "Internal hardware. Processor. Main brain. Coordinates everything.",
 	a: "CPU",

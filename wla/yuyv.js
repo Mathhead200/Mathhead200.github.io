@@ -1,4 +1,4 @@
-window.ANIMALS = new Set(["tiger", "frog", "turtle", "buck", "giraffe"]);
+window.ANIMALS = new Set(["sheep", "cobra", "lion", "chicken", "sealion"]);
 window.PROMPT = {
 	q: "Internal hardware. Memory. Temporary. Requires electricity. Primary memory.",
 	a: "RAM",

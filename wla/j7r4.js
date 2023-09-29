@@ -1,4 +1,4 @@
-window.ANIMALS = new Set(["tiger", "frog", "turtle", "buck", "giraffe"]);
+window.ANIMALS = new Set(["horse", "camel", "bear", "beaver", "elk"]);
 window.PROMPT = {
 	q: "Internal hardware. On the graphics card. Processor. Not required.",
 	a: "GPU",
